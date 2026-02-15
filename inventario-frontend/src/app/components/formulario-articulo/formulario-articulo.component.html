@@ -1,0 +1,35 @@
+<div class="contenedor-form">
+    
+    <h2>Datos del Artículo</h2>
+
+    <p>
+        <b>Nombre:</b> <br>
+        <input type="text" [(ngModel)]="articulo.nombre">
+    </p>
+
+    <p>
+        <b>Stock:</b> <br>
+        <input type="number" [(ngModel)]="articulo.stock">
+    </p>
+
+    <p>
+        <b>Ruta de la Imagen:</b> <br>
+        <input type="text" [(ngModel)]="articulo.imagen">
+    </p>
+
+    <p>
+        Vista previa: <br>
+        <img [src]="articulo.imagen" width="100">
+    </p>
+
+    <hr>
+
+    <button (click)="guardar()" [disabled]="!articulo.nombre" class="btn-guardar">
+        Guardar
+    </button>
+    
+    <button (click)="volver()" class="btn-cancelar">
+        Cancelar
+    </button>
+
+</div>

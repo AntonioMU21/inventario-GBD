@@ -1,0 +1,42 @@
+DROP TABLE IF EXISTS articulos;
+CREATE TABLE articulos (id SERIAL PRIMARY KEY, nombre VARCHAR(100), imagen VARCHAR(255), stock INT);
+
+INSERT INTO articulos (nombre, imagen, stock) VALUES 
+('Nintendo 2ds', '/assets/2ds.jpg', 15),
+('Nintendo 3ds', '/assets/3ds.jpg', 12),
+('Grafica rtx 4060', '/assets/4060.jpg', 5),
+('Alfombrilla', '/assets/alfombrilla.jpg', 50),
+('Maquina arcade', '/assets/arcade.jpg', 2),
+('Bateria externa', '/assets/bateria.jpg', 25),
+('Caja PC', '/assets/caja.jpg', 10),
+('Cargador', '/assets/cargador.jpg', 40),
+('Google pixel', '/assets/googlepixel.jpg', 8),
+('Cable HDMI', '/assets/hdmi.jpg', 100),
+('Ipad', '/assets/ipad.jpg', 7),
+('Iphone', '/assets/iphone.jpg', 14),
+('Luces LED', '/assets/led.jpg', 30),
+('Mando PS3', '/assets/mandops3.jpg', 18),
+('Mando PS4', '/assets/mandops4.jpg', 22),
+('Mando PS5', '/assets/mandops5.jpg', 15),
+('Mando xbox', '/assets/mandoxbox.jpg', 20),
+('Mando xbox 360', '/assets/mandoxbox360.jpg', 12),
+('New nintendo 2ds XL', '/assets/new2dsxl.jpg', 9),
+('New nintendo 3ds XL', '/assets/new3dsxl.jpg', 6),
+('Pantalla', '/assets/pantalla.jpg', 11),
+('Pilas', '/assets/pilas.jpg', 80),
+('Placa Madre', '/assets/placamadre.jpg', 7),
+('Portatil', '/assets/portatil.jpg', 13),
+('PS3', '/assets/ps3.jpg', 4),
+('PS4', '/assets/ps4.jpg', 9),
+('PS5', '/assets/ps5.jpg', 6),
+('Memoria ram', '/assets/ram.jpg', 35),
+('Raton', '/assets/raton.jpg', 45),
+('Disco SSD', '/assets/ssd.jpg', 28),
+('Tarjeta regalo steam', '/assets/steam.jpg', 60),
+('Teclado', '/assets/teclado.jpg', 24),
+('Xbox 360', '/assets/xbox360.jpg', 3),
+('Xbox one', '/assets/xboxone.jpg', 8),
+('Xbox series s', '/assets/xboxseriess.jpg', 10),
+('Xbox series x', '/assets/xboxseriesx.jpg', 5);
+
+SELECT * FROM articulos;

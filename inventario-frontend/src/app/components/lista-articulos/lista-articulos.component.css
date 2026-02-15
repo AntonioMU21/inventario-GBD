@@ -1,0 +1,67 @@
+.contenedor {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.barra-acciones {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.barra-acciones input {
+    padding: 5px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.barra-acciones button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.btn-nuevo {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    float: right;
+}
+
+.tabla-articulos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tabla-articulos th {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #999;
+}
+
+.tabla-articulos td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+button {
+    cursor: pointer;
+}
+
+.stock-bajo {
+    color: red;
+    font-weight: bold;
+}
+
+.stock-alto {
+    color: green;
+    font-weight: bold;
+}
