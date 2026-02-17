@@ -5,9 +5,9 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './app.html', // <--- CAMBIADO para coincidir con tu archivo
-  styleUrl: './app.css'      // <--- CAMBIADO para coincidir con tu archivo
+  templateUrl: './app.html',
+  styleUrl: './app.css'
 })
-export class App {           // <--- CAMBIADO (antes era AppComponent)
+export class App {
   title = 'InventarioWeb';
 }
