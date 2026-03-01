@@ -1,0 +1,43 @@
+<div class="contenedor">
+  <h1>Listado de Artículos</h1>
+
+  <div class="barra-acciones">
+    <input type="text" placeholder="Buscar producto..." [(ngModel)]="textoBusqueda" (input)="buscar()">
+    
+    <button (click)="ordenar('asc')">Orden A-Z</button>
+    <button (click)="ordenar('desc')">Orden Z-A</button>
+    
+    <button (click)="irNuevo()" class="btn-nuevo">+ Crear Artículo</button>
+  </div>
+
+  <hr>
+
+  <table border="1" class="tabla-articulos">
+    <thead>
+      <tr>
+        <th>Imagen</th>
+        <th>Nombre del articulo</th>
+        <th>Stock</th>
+        <th>Opciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let art of articulosFiltrados">
+        <td align="center">
+          <img [src]="art.imagen" width="60" height="60" onerror="this.src='/assets/no-image.jpg'">
+        </td>
+        
+        <td>{{ art.nombre }}</td>
+        
+        <td [class.stock-bajo]="art.stock < 10" [class.stock-alto]="art.stock >= 10">
+			{{ art.stock }} unidades
+		</td>
+        
+        <td align="center">
+          <button (click)="editar(art.id)">Editar</button>
+          &nbsp; <button (click)="borrar(art.id)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

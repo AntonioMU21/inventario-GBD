@@ -1,0 +1,35 @@
+<div class="contenedor-form">
+    
+    <h2>Datos del Artículo</h2>
+
+    <p>
+        <b>Nombre:</b> <br>
+        <input type="text" [(ngModel)]="articulo.nombre">
+    </p>
+
+    <p>
+        <b>Stock:</b> <br>
+        <input type="number" [(ngModel)]="articulo.stock">
+    </p>
+
+    <p>
+        <b>Imagen del Artículo:</b> <br>
+        <input type="file" (change)="onArchivoSeleccionado($event)" accept="image/*">
+    </p>
+
+    <p>
+        Vista previa: <br>
+        <img [src]="imagenPreview || articulo.imagen" width="100" style="max-height: 100px; object-fit: contain;">
+    </p>
+
+    <hr>
+
+    <button (click)="guardar()" [disabled]="!articulo.nombre" class="btn-guardar">
+        Guardar
+    </button>
+    
+    <button (click)="volver()" class="btn-cancelar">
+        Cancelar
+    </button>
+
+</div>

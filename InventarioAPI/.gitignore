@@ -1,0 +1,7 @@
+# .gitignore para backend
+bin/
+obj/
+.vs/
+.vscode/
+appsettings.Development.json
+*.user
