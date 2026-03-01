@@ -8,7 +8,7 @@ Antonio Muñoz
 
 Cambios realizados:
 
-Base de datos: Se ha miSe ha migrado de postgresql a sqlite para facilitar la portabilidad.
+Base de datos:Se ha migrado de postgresql a sqlite para facilitar la portabilidad.
 Arquitectura: Implementación mediante entity framework code first con sistema de migraciones.
 Gestión de Imágenes: Las imágenes ya no se cargan por URL externa. Ahora se suben archivos locales desde el equipo, los cuales se almacenan en la carpeta física wwwroot/images del servidor.
 
